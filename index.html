@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithFaseeh — Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="loader-inner">
+            <div class="loader-logo">
+                <em>CodeWith</em>Faseeh
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-percent">0%</p>
+        </div>
+    </div>
+
+
+
+    <div id="wrapper">
+        <header class="header" id="header">
+            <nav class="navbar">
+                <div class="nav-logo">
+                    <em>CodeWith</em>Faseeh
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn-primary">Hire Me</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#about" class="mobile-link">About</a></li>
+                <li><a href="#projects" class="mobile-link">Projects</a></li>
+                <li><a href="#services" class="mobile-link">Services</a></li>
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn-primary">Hire Me</a>
+        </div>
+
+        <main class="main" id="main">
+            <section class="hero" id="hero">
+                <div class="hero-bg">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
+                    <div class="orb orb-3"></div>
+                </div>
+                <div class="hero-content">
+                    <p class="hero-label">
+                        <span class="label-line"></span>
+                        Frontend Developer
+                    </p>
+                    <h1 class="hero-heading">
+                        <span class="hero-line">Crafting</span>
+                        <span class="hero-line gradient-text">Digital</span>
+                        <span class="hero-line">Experiences</span>
+                    </h1>
+                    <p class="hero-subtext">
+                        I build visually stunning, highly interactive websites
+                        that leave a lasting impression.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn-primary">View Projects</a>
+                        <a href="#contact" class="hero-link">
+                            Let's Talk <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-line"></div>
+                    <p>Scroll</p>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="about-left">
+                    <div class="about-visual">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+                        <div class="about-visual-center">
+                            <span class="visual-symbol">&lt;/&gt;</span>
+                        </div>
+                        <div class="float-tag tag-1">HTML</div>
+                        <div class="float-tag tag-2">CSS</div>
+                        <div class="float-tag tag-3">JS</div>
+                        <div class="float-tag tag-4">GSAP</div>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <p class="section-label">
+                        <span class="label-line"></span>
+                        About Me
+                    </p>
+                    <h2 class="about-heading">
+                        I Create <em class="gradient-text">Bold</em> &<br />
+                        Memorable Websites
+                    </h2>
+                    <p class="about-desc">
+                        Hey, I'm Faseeh — a passionate Frontend Developer
+                        who loves crafting immersive digital experiences.
+                        I specialize in building visually stunning websites
+                        with smooth animations and clean code.
+                    </p>
+                    <div class="about-skills">
+                        <p class="skills-label">Tech Stack</p>
+                        <div class="skills-grid">
+                            <div class="skill-item">HTML</div>
+                            <div class="skill-item">CSS</div>
+                            <div class="skill-item">JavaScript</div>
+                            <div class="skill-item">GSAP</div>
+                            <div class="skill-item">Three.js</div>
+                            <div class="skill-item">Locomotive</div>
+                            <div class="skill-item">Shery.js</div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn-primary">Get In Touch</a>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <div class="projects-header">
+                    <p class="section-label">
+                        <span class="label-line"></span>
+                        My Work
+                    </p>
+                    <h2 class="projects-heading">
+                        Featured <em class="gradient-text">Projects</em>
+                    </h2>
+                </div>
+                <div class="projects-category">
+                    <p class="category-label">Creative Projects</p>
+                    <div class="projects-track" id="creativeTrack">
+                        <div class="project-card">
+                            <div class="card-img">
+                                <img src="./assets/images/nexus.png" alt="Nexus GameStore">
+                                <div class="card-overlay">
+                                    <a href="https://nexus-game-store-pi.vercel.app" class="card-link"
+                                        target="_blank">View Live</a>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Nexus GameStore</h3>
+                                <p class="card-tags">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; GSAP</p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-img">
+                                <img src="./assets/images/rolex.png" alt="Rolex Re-Imagine">
+                                <div class="card-overlay">
+                                    <a href="https://rolex-reimagine.vercel.app" class="card-link" target="_blank">View
+                                        Live</a>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Rolex Re-Imagine</h3>
+                                <p class="card-tags">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; Three.js</p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-img">
+                                <img src="./assets/images/noir.png" alt="Noir Fashion Brand">
+                                <div class="card-overlay">
+                                    <a href="https://noir-ten-theta.vercel.app" class="card-link" target="_blank">View
+                                        Live</a>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Noir Fashion Brand</h3>
+                                <p class="card-tags">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; GSAP</p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-img">
+                                <img src="./assets/images/agency.png" alt="Digital Agency">
+                                <div class="card-overlay">
+                                    <a href="https://digital-agency-landing-brown.vercel.app" class="card-link"
+                                        target="_blank">View Live</a>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Digital Agency Landing</h3>
+                                <p class="card-tags">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; Locomotive</p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-img">
+                                <img src="./assets/images/ephemeral.png" alt="Ephemeral">
+                                <div class="card-overlay">
+                                    <a href="https://ephemeral-equilibrium-nu.vercel.app" class="card-link"
+                                        target="_blank">View Live</a>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Ephemeral</h3>
+                                <p class="card-tags">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; Shery.js</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-category">
+                    <p class="category-label">App Projects</p>
+                    <div class="projects-track" id="appTrack">
+                        <div class="project-card">
+                            <div class="card-img">
+                                <img src="./assets/images/todo.png" alt="Todo App">
+                                <div class="card-overlay">
+                                    <a href="https://to-do-app-murex-three.vercel.app" class="card-link"
+                                        target="_blank">View Live</a>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Todo App</h3>
+                                <p class="card-tags">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-img">
+                                <img src="./assets/images/quiz.png" alt="Quiz App">
+                                <div class="card-overlay">
+                                    <a href="https://quiz-game-seven-xi.vercel.app" class="card-link"
+                                        target="_blank">View Live</a>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Quiz App</h3>
+                                <p class="card-tags">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-img">
+                                <img src="./assets/images/weather.png" alt="Weather App">
+                                <div class="card-overlay">
+                                    <a href="https://weather-app-phi-ten-30.vercel.app" class="card-link"
+                                        target="_blank">View Live</a>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Weather App</h3>
+                                <p class="card-tags">HTML &nbsp;·&nbsp; CSS &nbsp;·&nbsp; JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services" id="services">
+                <div class="services-header">
+                    <p class="section-label">
+                        <span class="label-line"></span>
+                        What I Offer
+                    </p>
+                    <h2 class="services-heading">
+                        My <em class="gradient-text">Services</em>
+                    </h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">01</div>
+                        <h3 class="service-title">Landing Pages</h3>
+                        <p class="service-desc">High converting, visually stunning landing pages
+                            with smooth animations and premium design.</p>
+                        <div class="service-line"></div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">02</div>
+                        <h3 class="service-title">Creative Websites</h3>
+                        <p class="service-desc">Immersive creative websites with GSAP animations,
+                            smooth scroll and interactive effects.</p>
+                        <div class="service-line"></div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">03</div>
+                        <h3 class="service-title">Portfolio Websites</h3>
+                        <p class="service-desc">Clean and modern portfolio websites that showcase
+                            your work and leave a lasting impression.</p>
+                        <div class="service-line"></div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">04</div>
+                        <h3 class="service-title">Web Animations</h3>
+                        <p class="service-desc">Custom GSAP, Locomotive Scroll and Shery.js
+                            animations that bring your website to life.</p>
+                        <div class="service-line"></div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">05</div>
+                        <h3 class="service-title">Responsive Design</h3>
+                        <p class="service-desc">Fully responsive websites that look perfect
+                            on all devices — mobile, tablet and desktop.</p>
+                        <div class="service-line"></div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">06</div>
+                        <h3 class="service-title">Website Clones</h3>
+                        <p class="service-desc">Pixel perfect clones of any website with
+                            clean code and smooth interactions.</p>
+                        <div class="service-line"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <div class="contact-header">
+                    <p class="section-label">
+                        <span class="label-line"></span>
+                        Get In Touch
+                    </p>
+                    <h2 class="contact-heading">
+                        Let's Work <em class="gradient-text">Together</em>
+                    </h2>
+                    <p class="contact-subtext">
+                        Have a project in mind? Let's build something
+                        amazing together. I'm available for freelance work
+                    </p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-left">
+                        <div class="contact-item">
+                            <span class="contact-item-label">Email</span>
+                            <a href="mailto:codewithfaseeh@gmail.com" class="contact-item-value">
+                                codewithfaseeh@gmail.com
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-item-label">Location</span>
+                            <span class="contact-item-label">Pakistan</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-item-label">Availability</span>
+                            <span class="contact-item-value available">
+                                <span class="availability-dot"></span>
+                                Available for work
+                            </span>
+                        </div>
+                        <div class="contact-socials">
+                            <span class="contact-item-label">Socials</span>
+                            <div class="socials-links">
+                                <a href="https://github.com/codewithfaseeh59" target="_blank" class="social-link">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
+                                </a>
+                                <a href="https://www.linkedin.com/in/amir-faseeh-ur-rahman-khan-9008ab371"
+                                    target="_blank" class="social-link">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" name="name" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" name="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" name="subject" id="subject" placeholder="Project Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="5" placeholder="Tell me about your project"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary btn-submit">
+                                Send Message <span>→</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="footer">
+            <div class="footer-top">
+                <div class="logo">
+                    <em>CodeWith</em>Faseeh
+                </div>
+                <ul class="footer-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <a href="https://github.com/your-username" target="_blank" class="footer-social">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/your-username" target="_blank" class="footer-social">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p class="footer-copy">
+                    &copy; 2025 <em>CodeWith</em>Faseeh — All Rights Reserved
+                </p>
+                <p class="footer-credit">
+                    Designed & Built by
+                    <span class="gradient-text">Faseeh</span>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
