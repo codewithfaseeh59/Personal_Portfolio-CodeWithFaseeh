@@ -1,11 +1,13 @@
 @font-face {
     font-family: "neueMachina";
-    src: url("../assets/fonts/NeueMachina-Regular.ttf");
+    src: url("../assets/fonts/NeueMachina-Regular.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "montserrat";
-    src: url("../assets/fonts/Montserrat-Regular.ttf");
+    src: url("../assets/fonts/Montserrat-Regular.woff2") format("woff2");
+    font-display: swap;
 }
 
 * {
@@ -52,7 +54,20 @@ body {
     color: var(--white);
     line-height: 1.6;
     overflow-x: hidden;
-    cursor: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    body,
+    button {
+        cursor: none;
+    }
+}
+
+@media (hover: none), (pointer: coarse) {
+    .mousefollower {
+        display: none !important;
+    }
 }
 
 ::selection {
@@ -85,7 +100,6 @@ a {
 }
 
 button {
-    cursor: none;
     border: none;
     background: none;
     font-family: inherit;
@@ -96,7 +110,7 @@ button {
     align-items: center;
     gap: 8px;
     padding: 12px 32px;
-    border: 1px solid --blue;
+    border: 1px solid var(--blue);
     color: var(--blue);
     font-family: "montserrat";
     font-size: clamp(0.7rem, 1vw, 0.85rem);
@@ -212,6 +226,7 @@ button {
 }
 
 .nav-logo {
+    display: inline-block;
     font-family: "neueMachina";
     font-size: clamp(1rem, 1.5vw, 1.4rem);
     color: var(--white);
@@ -267,6 +282,9 @@ button {
     display: none;
     flex-direction: column;
     gap: 6px;
+    padding: 4px 0;
+    background: none;
+    border: none;
     cursor: pointer;
     z-index: 1001;
 }
@@ -286,11 +304,6 @@ button {
     transform: rotate(45deg) translate(6px, 6px);
 }
 
-
-.hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
-}
-
 .hamburger.active span:nth-child(2) {
     opacity: 0;
     transform: scale(0);
@@ -303,11 +316,6 @@ button {
 .hamburger:not(.active) span {
     transform: none;
     opacity: 1;
-}
-
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* Mobile Menu */
@@ -380,8 +388,9 @@ button {
 .orb {
     position: absolute;
     border-radius: 50%;
-    filter: blur(80px);
+    filter: blur(60px);
     opacity: 0.15;
+    will-change: transform;
     animation: floatOrb 8s ease-in-out infinite;
 }
 
@@ -864,6 +873,11 @@ button {
 
 .projects-track.active {
     cursor: grabbing;
+    user-select: none;
+}
+
+.projects-track.active a {
+    pointer-events: none;
 }
 
 .project-card {
@@ -1189,7 +1203,13 @@ a.contact-item-value:hover {
     transition: var(--transition-smooth);
 }
 
-.social-link i {
+.icon {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+}
+
+.social-link .icon {
     font-size: 1rem;
 }
 
@@ -1261,6 +1281,27 @@ a.contact-item-value:hover {
 
 .btn-submit:hover span {
     transform: translateX(6px);
+}
+
+.btn-submit:disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.form-status {
+    min-height: 1.4em;
+    font-family: "montserrat";
+    font-size: clamp(0.75rem, 1vw, 0.875rem);
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.form-status.success {
+    color: #22c55e;
+}
+
+.form-status.error {
+    color: #f87171;
 }
 
 #footer {
@@ -1624,17 +1665,15 @@ a.contact-item-value:hover {
         width: 150px;
     }
 
-    .hermes {
-        display: none !important;
-    }
+}
 
-    body {
-        cursor: auto !important;
-    }
+@media (prefers-reduced-motion: reduce) {
 
-    button,
-    a {
-        cursor: pointer !important;
+    .orb,
+    .ring,
+    .float-tag,
+    .scroll-line,
+    .availability-dot {
+        animation: none;
     }
-
 }
